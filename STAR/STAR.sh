@@ -2,7 +2,7 @@
 #This script installs STAR for RNA-seq data processing.
 
 sudo echo ""
-[ ! -d ./STAR.zip ] && wget -q https://github.com/alexdobin/STAR/releases/download/2.7.10b/STAR_2.7.10b.zip -O STAR.zip #_to_be_updated
+[ ! -f STAR.zip ] && wget -q https://github.com/alexdobin/STAR/releases/download/2.7.10b/STAR_2.7.10b.zip -O STAR.zip #_to_be_updated
 unzip -o -q STAR.zip && sleep 1 && rm -f STAR.zip && sleep 1
 [ ! -d /opt/RNAtool/ ] && sudo mkdir /opt/RNAtool/
 sudo cp -f ./STAR*/Linux_x86_64/* /opt/RNAtool/ && sleep 1
