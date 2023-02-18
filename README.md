@@ -1,2 +1,2 @@
-# RNAseq
+# RNAtool
 RNA-seq data analysis
