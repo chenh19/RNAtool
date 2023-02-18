@@ -13,6 +13,6 @@ rm -f ./jacusa2.jar
 ## JACUSA2helper
 [ ! -f BSgenome.Hsapiens.NCBI.GRCh38_1.3.1000.tar.gz ] && wget https://bioconductor.org/packages/3.16/data/annotation/src/contrib/BSgenome.Hsapiens.NCBI.GRCh38_1.3.1000.tar.gz
 [ ! -f JACUSA2helper_1.9.9.9600.tar.gz ] && wget -q https://github.com/dieterich-lab/JACUSA2helper/releases/download/v1.99-9600/JACUSA2helper_1.9.9.9600.tar.gz
-echo -e "devtools::install_local('BSgenome.Hsapiens.NCBI.GRCh38_1.3.1000.tar.gz', force = TRUE)\ndevtools::install_local('JACUSA2helper_1.9.9.9600.tar.gz', dependencies = FALSE, build_vignettes = TRUE, force = TRUE)" > ./jacusa2helper.R
+echo -e "devtools::install_local('BSgenome.Hsapiens.NCBI.GRCh38_1.3.1000.tar.gz', force = TRUE)\ndevtools::install_local('JACUSA2helper_1.9.9.9600.tar.gz', dependencies = TRUE, build_vignettes = TRUE, force = TRUE)" > ./jacusa2helper.R
 sudo Rscript ./jacusa2helper.R
 rm -f ./BSgenome.Hsapiens.NCBI.GRCh38_1.3.1000.tar.gz ./JACUSA2helper_1.9.9.9600.tar.gz ./jacusa2helper.R
