@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ## FastP
+sudo echo ""
 [ ! -f fastp ] && wget -q http://opengene.org/fastp/fastp -O fastp
 [ ! -d /opt/RNAtool/ ] && sudo mkdir /opt/RNAtool/
 sudo cp -f ./fastp /opt/RNAtool/
