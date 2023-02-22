@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ## PICARD
+sudo echo ""
 [ ! -f picard.jar ] && wget -q https://github.com/broadinstitute/picard/releases/download/2.27.5/picard.jar -O picard.jar
 [ ! -d /opt/RNAtool/ ] && sudo mkdir /opt/RNAtool/
 sudo cp -f ./picard.jar /opt/RNAtool/
