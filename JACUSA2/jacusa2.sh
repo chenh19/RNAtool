@@ -2,6 +2,7 @@
 
 
 ## JACUSA2
+sudo echo ""
 [ ! -f jacusa2.jar ] && wget -q https://github.com/dieterich-lab/JACUSA2/releases/download/v2.0.2-RC/JACUSA_v2.0.2-RC.jar -O jacusa2.jar
 [ ! -d /opt/RNAtool/ ] && sudo mkdir /opt/RNAtool/
 sudo cp -f ./jacusa2.jar /opt/RNAtool/
